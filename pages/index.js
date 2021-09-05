@@ -9,7 +9,7 @@ import SmallCard from "../components/SmallCard";
 
 export default function Home({ exploreData, cardsData }) {
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Airbnb</title>
         <link rel="icon" href="/favicon.ico" />
@@ -38,7 +38,7 @@ export default function Home({ exploreData, cardsData }) {
         </section>
 
         <section>
-          <h2 class="text-4xl font-semibold py-8">Live Anywhere</h2>
+          <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
 
           <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
             {cardsData?.map(({ img, title }) => (
