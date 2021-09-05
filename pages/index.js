@@ -1,5 +1,4 @@
 import Head from "next/head";
-import image from "next/image";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -59,6 +58,13 @@ export default function Home({ exploreData, cardsData }) {
     </div>
   );
 }
+
+// get static props means
+// that is when the page gets built
+// and every user that comes afterwards goes ahead and gets that version of the page
+// which means it is immediately available.
+// The danger with that is the info can get outdated
+// This is solved by INCREMENTAL STATIC GENERATION. You can do research on it.
 
 export async function getStaticProps() {
   const exploreData = await fetch("https://links.papareact.com/pyp").then(
