@@ -71,8 +71,8 @@ export async function getStaticProps() {
     (res) => res.json()
   );
 
-  const cardsData = await fetch("https://links.papareact.com/zp1").then(
-    (res) => res.json()
+  const cardsData = await fetch("https://links.papareact.com/zp1").then((res) =>
+    res.json()
   );
 
   return {
